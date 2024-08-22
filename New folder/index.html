@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS
+        </title>
+        <style>
+            body {
+                background-color: tomato;
+                color: blue;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            div {
+                background-color: red;
+                color: yellow;
+                font-family: 'Times New Roman', Times, serif; 
+                text-align: center;   
+            }
+            input {
+                background-color: violet;
+                color: tan;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px; 
+            } 
+            button {
+                background-color: springgreen;
+                color: sandybrown;
+                text-align: center;
+                height: 90px;
+                width: 90px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                cursor: pointer;
+            }
+            .c1:hover {
+                background-color: saddlebrown;
+            }
+            .c2:hover {
+                background-color: saddlebrown;
+            }
+            .c3:hover {
+                background-color: saddlebrown;
+            }
+            .c4:hover {
+                background-color: saddlebrown;
+            }
+            .c5:hover {
+                background-color: saddlebrown;
+            }
+            .c6:hover {
+                background-color: saddlebrown;
+            }
+            .c7:hover {
+                background-color: saddlebrown;
+            }
+            .c8:hover {
+                background-color: saddlebrown;
+            }
+            .c9:hover {
+                background-color: saddlebrown;
+            }
+            .c10:hover {
+                background-color: saddlebrown;
+            }
+            .c11:hover {
+                background-color: saddlebrown;
+            }
+            .c12:hover {
+                background-color: saddlebrown;
+            }
+            .c13:hover {
+                background-color: saddlebrown;
+            }
+            .c14:hover {
+                background-color: saddlebrown;
+            }
+            .c15:hover {
+                background-color: saddlebrown;
+            }
+            .c16:hover {
+                background-color: saddlebrown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> SIMPLE CALCULATOR </h1> <hr>
+        <div>
+            <input id="input" type="text" placeholder="0"> <br>
+            <button onclick="f ('0')" class="c1"> 0 </button> 
+            <button onclick="f ('1')" class="c2"> 1 </button>
+            <button onclick="f ('2')" class="c3"> 2 </button>
+            <button onclick="f ('3')" class="c4"> 3 </button>
+            <button onclick="f ('4')" class="c5"> 4 </button> <br>
+            <button onclick="f ('5')" class="c6"> 5 </button>
+            <button onclick="f ('6')" class="c7"> 6 </button>
+            <button onclick="f ('7')" class="c8"> 7 </button>
+            <button onclick="f ('8')" class="c9"> 8 </button>
+            <button onclick="f ('9')" class="c10"> 9 </button> <br>
+            <button onclick="f ('+')" class="c11"> + </button>
+            <button onclick="f ('-')" class="c12"> - </button> 
+            <button onclick="f ('*')" class="c13"> * </button>
+            <button onclick="f ('/')" class="c14"> / </button>
+            <button onclick="c ()" class="c15"> = </button> <br>
+            <button onclick="o ()" class="c16"> C </button> 
+        </div>
+        <p id="p"> </p>
+        <script>
+            try {
+                var i ;
+                i = document.getElementById("input") ;
+                function f (number) {
+                    i.value += number ;
+                    return 1 ;
+                }
+                function c () {
+                    i.value = eval (i.value) ;
+                    return 1 ;
+                }
+                function o () {
+                    i.value = " " ;
+                    return 1 ;
+                }
+            }catch(error) {
+                document.getElementById("p").innerHTML = error.message ;
+            }    
+        </script>
+    </body>
+</html>
